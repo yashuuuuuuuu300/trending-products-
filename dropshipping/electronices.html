@@ -1,0 +1,209 @@
+<!-- electronics.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electronics</title>
+ <style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #1e1e2f, #34344e, #2e2e38);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  background-color:black;
+  border-radius: 18px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.product-info h2 {
+  margin: 0;
+  font-size: 22px;
+  color:white;
+}
+
+.price {
+  color: #0a9d2d;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.description {
+  margin: 12px 0;
+  font-size: 14px;
+  color: white;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.features li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.buy-btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #1ebe5b;
+}
+
+
+h1 {
+  padding: 20px;
+  color: #fff;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h2 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.product p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #1ebe5b;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: greenyellow;
+  margin: 8px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: white ;
+  margin: 10px 0 15px;
+  padding: 0 10px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+ </style>
+</head>
+<body>
+  <h1>Electronics Collection</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="earpods.jpg" alt="Wireless Earbuds">
+      <div class="product-info">
+        <h2>Wireless Earbuds</h2>
+        <p class="price">₹999</p>
+        <p class="description">
+          Crystal-clear sound with smart noise reduction, touch controls, and long-lasting battery life.
+        </p>
+        <ul class="features">
+          <li><strong>Bluetooth:</strong> 5.2 version with auto-pairing</li>
+          <li><strong>Battery:</strong> 20+ hours with case</li>
+          <li><strong>Compatibility:</strong> Android & iOS</li>
+          <li><strong>Water Resistance:</strong> IPX4</li>
+          <li><strong>Frequency</strong>10 Hz</li> 
+          <li><strong>Charging Type</strong>Micro USB</li>  
+          <li><strong>Bluetooth Range</strong>10m</li> 
+          <li><strong>Battery Charge Time</strong>2 Hours</li>  
+        </ul>
+        <a href="https://wa.me/917530974535?text=Hi, I want to order Wireless Earbuds (₹999)" class="buy-btn">Order on WhatsApp</a>
+      </div>
+    </div>
+    
+    <div class="product-card">
+      <img src="smart watch.jpg" alt="Wireless Earbuds">
+      <div class="product-info">
+        <h2>Smart watch</h2>
+        <p class="price">₹1499</p>
+        <p class="description">
+          Stylish smart watch with full-touch display, fitness tracking, and Bluetooth calling — perfect for your active lifestyle.      </p>
+        <ul class="features">
+          <li><strong>Display:</strong> 1.75" HD full touch screen</li>
+          <li><strong>Bluetooth Calling:</strong> Answer/reject calls directly</li>
+          <li><strong>Health Tracking:</strong> Heart rate, SpO2, sleep monitor</li>
+          <li><strong>Fitness:</strong> Step count, sports modes, calorie tracker</li>
+          <li><strong>Battery:</strong> 7-day battery life</li>
+          <li><strong>Compatibility:</strong> Android & iOS</li>
+          <li><strong>Water Resistance:</strong> IP67 rated</li>
+        </ul>
+        <a href="https://wa.me/917530974535?text=Hi, I want to order Wireless Earbuds (₹999)" class="buy-btn">Order on WhatsApp</a>
+      </div>
+    </div> 
+  </div>
+</body>
+</html>
